@@ -4,4 +4,9 @@
     <style name="Theme.DailyJoke" parent="android:Theme.Material.Light.NoActionBar" />
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

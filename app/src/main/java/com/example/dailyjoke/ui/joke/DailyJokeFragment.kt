@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.dailyjoke.databinding.FragmentDailyJokeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DailyJokeFragment : Fragment() {
 
-    lateinit var mBinding: FragmentDailyJokeBinding
+    private lateinit var mBinding: FragmentDailyJokeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
