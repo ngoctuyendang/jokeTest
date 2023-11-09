@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="banner_color">#29B363</color>
     <color name="divider_color">#EBEBEB</color>
+    <color name="button_color">#2C7EDB</color>
 </resources>

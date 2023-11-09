@@ -7,4 +7,7 @@
     <string name="footer_sub_desc">Copyright 2021 HLS</string>
     <string name="handcrafted_by">Handcrafted by</string>
     <string name="creator_name">Jim HLS</string>
+    <string name="funny_text">This is Funny!</string>
+    <string name="not_funny_text">This is not Funny.</string>
+    <string name="empty_data">That\'s all the jokes for today! Come back another day!</string>
 </resources>

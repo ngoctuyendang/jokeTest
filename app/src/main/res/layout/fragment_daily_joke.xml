@@ -30,12 +30,12 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/avt_img"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:src="@drawable/ic_sunflower"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/circleImageView"
+                app:srcCompat="@drawable/ic_sunflower"
                 app:strokeWidth="1dp" />
 
             <TextView
@@ -91,18 +91,53 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/content"
+    <TextView
+        android:id="@+id/joke_content"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="fill_horizontal"
+        tools:text="I am going to eat that pussy once Jimmy leaves for school today!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/banner_layout">
+        app:layout_constraintTop_toBottomOf="@id/banner_layout"
+        app:layout_constraintBottom_toTopOf="@id/funny_btn"/>
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/funny_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/button_color"
+        android:padding="16dp"
+        android:text="@string/funny_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/footer_layout"
+        app:layout_constraintEnd_toStartOf="@id/not_funny_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/not_funny_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/banner_color"
+        android:padding="16dp"
+        android:text="@string/not_funny_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/funny_btn"
+        app:layout_constraintTop_toTopOf="@id/funny_btn" />
 
     <LinearLayout
+        android:id="@+id/footer_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
