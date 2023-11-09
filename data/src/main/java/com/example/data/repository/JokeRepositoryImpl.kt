@@ -7,7 +7,7 @@ import com.example.domain.repository.JokeRepository
 import io.reactivex.Single
 
 class JokeRepositoryImpl(
-    private val jokeDao: JokeDao,
+    private val jokeDao: JokeDao
 ) : JokeRepository {
     private val listData: ArrayList<JokeItem> = arrayListOf(
         JokeItem(

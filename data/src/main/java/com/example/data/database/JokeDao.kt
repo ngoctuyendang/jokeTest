@@ -15,4 +15,7 @@ interface JokeDao {
 
     @Query("UPDATE joke_stories SET funny_status=:funnyStatus WHERE id = :jokeId")
     fun updateFunnyStatus (jokeId: Int, funnyStatus: Int): Completable
+
+    @Query("Select * from joke_stories where id = :jokeId")
+    fun getJokeWithId (jokeId: Int): JokeItemDto
 }
